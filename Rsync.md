@@ -62,7 +62,13 @@ rsync -ravbh dodo@192.168.0.113:/home/dodo/backup  /home/user/storage
 
 **_Use of –include and –exclude Options_**
 
+This command is used to remove the content of a destination file that has already been copied and restore the content of a new copy of the file.
 
+```bash
+
+rsync -azvhr --delete-excluded source_file/ kendanick@192.168.0.104:/destination
+
+```
 
 
 
